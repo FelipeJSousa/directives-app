@@ -1,15 +1,15 @@
 <div>
     <h1>NgFor</h1>
 </div>
-<div>
+<!-- <div>
     <p *ngFor="let name of names">{{ name }}</p>
 
     <p *ngFor="let name of names; let i=index">{{ i }} - {{ name }}</p>
-</div>
+</div> -->
 <mat-card>
 
     <mat-card-title>
-      MatSelectionList
+      MatSelectionList 
     </mat-card-title>
   
     <mat-card-content>
@@ -20,6 +20,36 @@
     <mat-card-footer>
         <p>
             Options selected: {{ selectednames.selectedOptions.selected.length}}
+        </p>
+    </mat-card-footer>
+</mat-card>
+
+<mat-card>
+    
+    <mat-card-title>
+        MatList
+    </mat-card-title>
+    
+    <mat-card-content>
+
+        <mat-list>
+            <h3 matSubHeader>Names</h3>
+            <mat-list-item *ngFor="let name of names; let i=index"> 
+                <mat-icon matListIcon>person</mat-icon> 
+                <h4 matLine>{{ i+1 }} - {{ name }}</h4>
+            </mat-list-item>
+            
+            <h3 matSubHeader>Cities</h3>
+            <mat-list-item *ngFor="let city of cities; let i=index">
+                <mat-icon matListIcon>location_city</mat-icon> 
+                <h4 matLine>{{ city.name }}</h4>
+                <h4 matLine>{{ city.state }}</h4>
+            </mat-list-item>
+        </mat-list>
+                
+    </mat-card-content>
+    <mat-card-footer>
+        <p>
         </p>
     </mat-card-footer>
 </mat-card>
