@@ -1,0 +1,21 @@
+mat-card-content, mat-card-actions, mat-card-footer {
+    text-align: center;
+}
+mat-form-field{
+    width: 30%;
+    margin: 20px;
+}
+
+mat-list{
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    padding: 1rem;
+}
+
+mat-list-item{
+    margin: auto;
+    width: 50%;
+    text-align: left;
+    padding: 10px;
+}
