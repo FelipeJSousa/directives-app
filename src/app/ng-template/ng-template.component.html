@@ -1,1 +1,15 @@
-<p>ng-template works!</p>
+<mat-card>
+    <mat-card-title>NgTemplate</mat-card-title>
+    <mat-card-content>
+        <mat-checkbox [(ngModel)]="enable">Enable/Disable</mat-checkbox>
+    </mat-card-content>
+    <p>Before ngTemplate</p>
+    
+    <h1 *ngIf="enable else mytemplate">Template Disable</h1>
+    
+    <ng-template #mytemplate>
+        <h1>Inside Template</h1>
+        <h3>Descriptions...</h3>
+    </ng-template>
+</mat-card>
+

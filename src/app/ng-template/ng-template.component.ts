@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NgTemplateComponent implements OnInit {
 
+  enable = false;
+
   constructor() { }
 
   ngOnInit(): void {
