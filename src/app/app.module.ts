@@ -12,6 +12,7 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatInputModule } from '@angular/material/input';
 import { NgClassComponent } from './ng-class/ng-class.component';
 import { NgIfComponent } from './ng-if/ng-if.component';
+import { SubNgIfComponent } from './ng-if/sub-ng-if/sub-ng-if.component';
 
 
 
@@ -20,7 +21,8 @@ import { NgIfComponent } from './ng-if/ng-if.component';
     AppComponent,
     NgStyleComponent,
     NgClassComponent,
-    NgIfComponent
+    NgIfComponent,
+    SubNgIfComponent,
   ],
   imports: [
     BrowserModule,
