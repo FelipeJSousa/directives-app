@@ -1,0 +1,47 @@
+mat-card{
+    margin: 20px;
+}
+mat-radio-button{
+    margin-bottom: 20px;
+}
+
+mat-radio-group{
+    display: inline-flex;
+    flex-direction: column;
+}
+
+mat-card-footer{
+    text-align: center;
+}
+
+mat-card-content{
+    padding: 50px;
+}
+
+.classe0 {
+    font-size: 16px;
+    color: rgb(160, 81, 81);
+    background-color: blanchedalmond;
+    padding: 10px;
+}
+
+.classe1 {
+    font-size: 18px;
+    color: rgb(84, 233, 54);
+    background-color: rgb(82, 58, 24);
+    padding: 15px;
+}
+
+.classe2 {
+    font-size: 20px;
+    color: rgb(87, 54, 235);
+    background-color: ;
+    padding: 20px;
+}
+
+.classe3 {
+    font-size: 22px;
+    color: rgb(85, 85, 85);
+    background-color: rgb(144, 255, 240);
+    padding: 25px;
+}
