@@ -1,0 +1,25 @@
+<div>
+    <h1>NgFor</h1>
+</div>
+<div>
+    <p *ngFor="let name of names">{{ name }}</p>
+
+    <p *ngFor="let name of names; let i=index">{{ i }} - {{ name }}</p>
+</div>
+<mat-card>
+
+    <mat-card-title>
+      MatSelectionList
+    </mat-card-title>
+  
+    <mat-card-content>
+        <mat-selection-list #selectednames>
+            <mat-list-option *ngFor="let name of names; let i=index">{{ i+1 }} - {{ name }}</mat-list-option>
+        </mat-selection-list>
+    </mat-card-content>
+    <mat-card-footer>
+        <p>
+            Options selected: {{ selectednames.selectedOptions.selected.length}}
+        </p>
+    </mat-card-footer>
+</mat-card>

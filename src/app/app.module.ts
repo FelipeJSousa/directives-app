@@ -10,9 +10,12 @@ import { MatRadioModule } from '@angular/material/radio';
 import { MatSelectModule } from '@angular/material/select';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatInputModule } from '@angular/material/input';
+import { MatListModule } from '@angular/material/list';
+
 import { NgClassComponent } from './ng-class/ng-class.component';
 import { NgIfComponent } from './ng-if/ng-if.component';
 import { SubNgIfComponent } from './ng-if/sub-ng-if/sub-ng-if.component';
+import { NgForComponent } from './ng-for/ng-for.component';
 
 
 
@@ -23,6 +26,7 @@ import { SubNgIfComponent } from './ng-if/sub-ng-if/sub-ng-if.component';
     NgClassComponent,
     NgIfComponent,
     SubNgIfComponent,
+    NgForComponent,
   ],
   imports: [
     BrowserModule,
@@ -32,7 +36,8 @@ import { SubNgIfComponent } from './ng-if/sub-ng-if/sub-ng-if.component';
     MatRadioModule, 
     MatSelectModule,
     MatCheckboxModule,
-    MatInputModule
+    MatInputModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
