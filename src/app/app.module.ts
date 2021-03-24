@@ -8,7 +8,10 @@ import { FormsModule } from '@angular/forms'
 import { MatCardModule } from '@angular/material/card';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatSelectModule } from '@angular/material/select';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatInputModule } from '@angular/material/input';
 import { NgClassComponent } from './ng-class/ng-class.component';
+import { NgIfComponent } from './ng-if/ng-if.component';
 
 
 
@@ -16,7 +19,8 @@ import { NgClassComponent } from './ng-class/ng-class.component';
   declarations: [
     AppComponent,
     NgStyleComponent,
-    NgClassComponent
+    NgClassComponent,
+    NgIfComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +28,9 @@ import { NgClassComponent } from './ng-class/ng-class.component';
     FormsModule,
     MatCardModule,
     MatRadioModule, 
-    MatSelectModule
+    MatSelectModule,
+    MatCheckboxModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
