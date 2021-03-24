@@ -1,4 +1,5 @@
 <mat-card>
+    <mat-card-title>Form</mat-card-title>
     <mat-card-content>
         <section>
             <mat-form-field>
@@ -31,13 +32,16 @@
         <button mat-raised-button color="accent" (click)="listClients()">{{ btnlisttitle }}</button>
     </mat-card-actions>
     <mat-card-footer>
-        <mat-list *ngIf="showClientList">
+        <mat-list *ngIf="showClientList && clients.length > 0">
             <h3 matSubHeader>Clients</h3>
             <mat-list-item *ngFor="let client of clients; let i=index">
                 <mat-icon matListIcon>person</mat-icon>
                 <p matLine>Client {{ i+1 }}: {{ client.name }}</p>
                 <p matLine>Address: {{ client.address }} - {{ client.city}}</p>
                 <p matLine>Age: {{ client.age}} - Phone: {{ client.phone}}</p>
+                <button mat-icon-button color="accent" (click)="deleteClient(i)">
+                    <mat-icon>delete</mat-icon>
+                </button>
             </mat-list-item>
         </mat-list>
     </mat-card-footer>

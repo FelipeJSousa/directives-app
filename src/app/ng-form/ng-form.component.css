@@ -1,4 +1,4 @@
-mat-card-content, mat-card-actions, mat-card-footer {
+mat-card-content, mat-card-actions, mat-card-footer, mat-card-title {
     text-align: center;
 }
 mat-form-field{

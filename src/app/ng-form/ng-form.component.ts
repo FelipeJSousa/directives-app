@@ -13,11 +13,6 @@ export class NgFormComponent implements OnInit {
     phone : "",
     city : "",
     age : 0
-    // {name: ""},
-    // {address:  ""},
-    // {phone: ""},
-    // {city:  ""},
-    // {age: 0}
   }
 
   cities = [
@@ -67,5 +62,10 @@ export class NgFormComponent implements OnInit {
         this.showClientList = true;
         this.btnlisttitle = "Hide List" ;
       }
+  }
+
+  deleteClient(index){
+    this.clients.splice(index,1);
+    console.log(this.clients);
   }
 }
